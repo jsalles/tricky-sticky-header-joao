@@ -8,14 +8,18 @@ import { Header } from '../components/Header';
 import { InfiniteHits } from '../components/InfiniteHits';
 import { InstantSearch } from '../components/InstantSearch';
 import { ProductActions } from '../components/ProductActions';
+import { useScrollDirection } from '../hooks/useScrollDirection';
+import { useMemo } from 'react';
 
 export function Store() {
+  const scrollDirection = useScrollDirection();
+  const offset = useMemo(() => scrollDirection === "down" ? "-translate-y-16" : "", [scrollDirection]);
   return (
     <InstantSearch>
       <div className="max-w-6xl mx-auto mb-10">
         <Header></Header>
 
-        <div className="sticky top-0 z-10 flex items-center justify-between h-16 px-6 bg-white">
+        <div className={`sticky top-16 ${offset} z-10 flex items-center justify-between h-16 px-6 bg-white transition-all duration-500`}>
           <div id="category-title" className="w-40">
             <Breadcrumb
               attributes={[

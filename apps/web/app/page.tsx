@@ -8,5 +8,7 @@ export default async function Index() {
    *
    * Note: The corresponding styles are in the ./index.scss file.
    */
-  return <Store></Store>;
+  return (
+      <Store />
+  );
 }
