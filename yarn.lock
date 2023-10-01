@@ -3113,6 +3113,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-virtualized@npm:^9.21.23":
+  version: 9.21.23
+  resolution: "@types/react-virtualized@npm:9.21.23"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/react": "*"
+  checksum: 825ca8e30df26dcf37c0aec5712c677a277be099e743aade62a53de15a1f3d8e4cc7baa2dc07dd1608b6ea3783b3a528033096c15ebc39dfefd3e0d6cff49317
+  languageName: node
+  linkType: hard
+
 "@types/react@npm:*":
   version: 18.2.23
   resolution: "@types/react@npm:18.2.23"
@@ -11230,6 +11240,7 @@ __metadata:
     "@types/node": 18.14.2
     "@types/react": 18.2.14
     "@types/react-dom": 18.2.6
+    "@types/react-virtualized": ^9.21.23
     "@typescript-eslint/eslint-plugin": 5.62.0
     "@typescript-eslint/parser": 5.62.0
     algoliasearch: ^4.19.1
